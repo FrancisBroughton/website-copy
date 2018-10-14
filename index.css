@@ -47,13 +47,12 @@ body * {
 
 .card:nth-child(even) .image-wrapper img{
   left:150px;
+  
 }
-
 
 .card:last-child .image-wrapper img {
  height:250px;
  top:130px;
-
 }
 
 .button {
@@ -67,5 +66,12 @@ body * {
   color: #fff;
   border-radius: 50px;
   background-image: linear-gradient(to right, #0566D8 0%, #9052F3 100%);
+}
 
+.bold-para {
+  font-weight: bold;
+  line-height: 1.6;
+}
+p {
+  line-height: 1.6;
 }
