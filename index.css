@@ -1,13 +1,14 @@
 @import 'colors.css';
 
 body * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   color: #1C1463;
   font-family: 'Open Sans', sans-serif;
+  
 }
 .container {
-  max-width: 1420px;
-  padding: 50px 10px 50px 10px;
+  max-width: 1400px;
+  padding: 150px 20px 150px 20px;
 }
 .card {
 	width:100%;
@@ -22,12 +23,13 @@ body * {
 
 .card .card-content-wrapper {
   width:960px;
-  height: 726px;
+  
 }
 
 .card .card-content-wrapper .h1 {
   border-bottom:1px solid #d2d0e0;
   height: 56px;
+  width: 700px;
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
@@ -35,6 +37,31 @@ body * {
   line-height: normal;
   letter-spacing: normal;
   color: #1c1463;
+  display: inline-grid;
+}
+
+.h3 {
+  font-family: "Open Sans"; 
+  font-size: 28px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 600; 
+  line-height: 39px;
+  width: 700px;
+}
+
+p {
+  font-family: "Open Sans"; 
+  font-size: 18px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 44px;
+  width: 700px
+}
+
+.card:nth-child(even) .card .right .card-content-wrapper .h3{
+  float: right;
 }
 
 .image-wrapper {
@@ -42,6 +69,7 @@ body * {
   width:480px;
   height:480px;
   background-color: #0566D8;
+  display: inline-grid;
 }
 
 .image-wrapper img {
@@ -59,13 +87,13 @@ body * {
 
 .card:last-child .image-wrapper {
   background-color: #1c1463;
-  height:720px;
+  /* height: fill; */
+  padding-top: 650px;
 }
 
 .card:last-child .image-wrapper img {
- height:250px;
- top:130px;
- 
+ height:300px;
+ top:150px;
 }
 
 .primary-button {
@@ -79,23 +107,3 @@ body * {
   background-image: linear-gradient(107deg, #0566d8, #9052f3)
 }
 
-.h3 {
-  font-family: "Open Sans"; 
-  font-size: 28px; 
-  font-style: normal; 
-  font-variant: normal; 
-  font-weight: 600; 
-  line-height: 39px;
-  width: 700px
-
-}
-
-p {
-  font-family: "Open Sans"; 
-  font-size: 18px; 
-  font-style: normal; 
-  font-variant: normal; 
-  font-weight: 400; 
-  line-height: 44px;
-  width: 700px
-}
