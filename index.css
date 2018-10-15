@@ -69,14 +69,15 @@ p {
   width: 700px
 }
 
-
+.card:nth-child(even) .card-content-wrapper p{
+  float: right;
+}
 
 .image-wrapper {
   position:relative;
   width:480px;
   height:480px;
   background-color: var(--darkblue);
-  display: inline-grid;
 }
 
 .image-wrapper img {
@@ -89,10 +90,6 @@ p {
 
 .card:nth-child(even) .image-wrapper img{
   left:120px;
-}
-
-.card:nth-child(even) .card-content-wrapper p{
-  float: right;
 }
 
 .card:last-child .image-wrapper {
