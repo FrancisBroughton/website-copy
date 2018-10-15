@@ -1,9 +1,19 @@
-@import 'colors.css';
+:root{
+  /* colors */
+  --navy: #1C1463;
+  --darkblue: #0566D8;
+  --purple: #9052F3;
+  --buttonTextColor: white;
+
+  /* fonts */
+  --fontOpenSans: 'Open Sans', sans-serif;
+ 
+}
 
 body * {
   box-sizing: border-box;
-  color: #1C1463;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--navy);
+  font-family: var(--fontOpenSans);
   
 }
 .container {
@@ -36,12 +46,11 @@ body * {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #1c1463;
-  display: inline-grid;
+  color: var(--navy);
 }
 
 .h3 {
-  font-family: "Open Sans"; 
+  font-family: var(--fontOpenSans);
   font-size: 28px; 
   font-style: normal; 
   font-variant: normal; 
@@ -51,7 +60,7 @@ body * {
 }
 
 p {
-  font-family: "Open Sans"; 
+  font-family: var(--fontOpenSans);
   font-size: 18px; 
   font-style: normal; 
   font-variant: normal; 
@@ -60,15 +69,13 @@ p {
   width: 700px
 }
 
-.card:nth-child(even) .card .right .card-content-wrapper .h3{
-  float: right;
-}
+
 
 .image-wrapper {
   position:relative;
   width:480px;
   height:480px;
-  background-color: #0566D8;
+  background-color: var(--darkblue);
   display: inline-grid;
 }
 
@@ -81,13 +88,15 @@ p {
 }
 
 .card:nth-child(even) .image-wrapper img{
-  left:150px;
+  left:120px;
+}
 
+.card:nth-child(even) .card-content-wrapper p{
+  float: right;
 }
 
 .card:last-child .image-wrapper {
-  background-color: #1c1463;
-  /* height: fill; */
+  background-color: var(--navy);
   padding-top: 650px;
 }
 
@@ -99,11 +108,11 @@ p {
 .primary-button {
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: var(--buttonTextColor);
   width: 330px;
   height: 100px;
   border-radius: 50px;
   box-shadow: 0 10px 10px 5px rgba(28, 20, 99, 0.1);
-  background-image: linear-gradient(107deg, #0566d8, #9052f3)
+  background-image: linear-gradient(107deg, var(--darkblue), var(--purple))
 }
 
